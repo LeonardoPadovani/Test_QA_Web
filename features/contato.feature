@@ -10,12 +10,12 @@ Esquema do Cenario: cadastro com sucesso
         E digito o nome com <nome> 
         E digito a empresa com <empresa> 
         E digito o email com <email>
-        E digito o fone com <fone>
+        E digito o telefone com <fone>
         E digito a mensagem com <mensagem>
         E envio os dados
         Então devo ver a <msg> de cadastro com sucesso
 
     Exemplos: 
         |nome              |empresa        |email               |fone            |mensagem  |msg| 
-        |"Leonardo Santos" |"Leonardo LTDA"|"leonardo@gmail.com"|"(62)99999-9999"|"Teste QA"|"teste"|  
+        |"Leonardo Santos" |"Leonardo LTDA"|"leonardo@gmail.com"|"(62)99999-9999"|"Teste QA"|"SUCESSO!"|  
         

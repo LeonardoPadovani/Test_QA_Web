@@ -29,7 +29,7 @@ class ContatoPage
         fill_in 'comp-jt789au9', with: mensagem
     end
 
-    def Enviar()
+    def Enviar
         click_button 'Enviar'
     end
 

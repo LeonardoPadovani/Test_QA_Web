@@ -15,7 +15,7 @@ end
     @contato.digitarEmpresa(empresa)
   end
 
-  Quando("digito o em ail com {string}") do |email|
+  Quando("digito o email com {string}") do |email|
     @contato.digitarEmail(email)
   end
 
@@ -28,7 +28,8 @@ end
   end
   
   Quando("envio os dados") do
-    pending # Write code here that turns the phrase above into concrete actions end
+    @contato.Enviar
+  end
   
   Então("devo ver a {string} de cadastro com sucesso") do |msg|
     sleep 10
