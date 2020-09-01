@@ -29,8 +29,12 @@ class ContatoPage
         fill_in 'comp-jt789au9', with: mensagem
     end
 
+    def Enviar()
+        click_button 'Enviar'
+    end
+
     def retornarMensagemSucesso
-        find(".typographycomponentstyle__H1").text
+        find("div[id=comp-jt789auo]").text
     end
      
 end

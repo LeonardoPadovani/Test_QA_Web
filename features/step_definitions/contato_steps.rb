@@ -30,5 +30,8 @@ end
   Quando("envio os dados") do
     pending # Write code here that turns the phrase above into concrete actions end
   
-  Então("devo ver a {string} de cadastro com sucesso") do |string|
-    pending # Write code here that turns the phrase above into concrete actions end
+  Então("devo ver a {string} de cadastro com sucesso") do |msg|
+    sleep 10
+    mensagem = @contato.retornarMensagemSucesso
+    expect(msg).to include msg
+  end
