@@ -2,7 +2,7 @@ class ContatoPage
     include Capybara::DSL
 
     def expandirMenu
-        find("title[id*=svgtitle]").click
+        find("div[data-testid*=svgRoot-comp-]").click
     end
 
     def acessarContato
@@ -14,19 +14,19 @@ class ContatoPage
     end
 
     def digitarEmpresa(empresa)
-        fill_in 'comp-jt789atv', with: empresa
+        fill_in 'input_comp-jt789atv', with: empresa
     end
 
     def digitarEmail(email)
-        fill_in 'comp-jt789atz', with: email
+        fill_in 'input_comp-jt789atz', with: email
     end
 
     def digitarTelefone(telefone)
-        fill_in 'comp-jt789au5', with: telefone
+        fill_in 'input_comp-jt789au5', with: telefone
     end
 
     def digitarMensagem(mensagem)
-        fill_in 'comp-jt789au9', with: mensagem
+        fill_in 'textarea_comp-jt789au9', with: mensagem
     end
 
     def Enviar
