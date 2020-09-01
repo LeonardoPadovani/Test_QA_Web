@@ -32,7 +32,6 @@ end
   end
   
   Então("devo ver a {string} de cadastro com sucesso") do |msg|
-    sleep 10
-    mensagem = @contato.retornarMensagemSucesso
-    expect(msg).to include msg
+    sleep 5
+    expect(page).to have_content (msg)
   end

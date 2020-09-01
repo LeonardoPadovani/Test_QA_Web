@@ -17,5 +17,5 @@ Esquema do Cenario: cadastro com sucesso
 
     Exemplos: 
         |nome              |empresa        |email               |fone            |mensagem  |msg| 
-        |"Leonardo Santos" |"Leonardo LTDA"|"leonardo@gmail.com"|"(62)99999-9999"|"Teste QA"|"SUCESSO!"|  
+        |"Leonardo Santos" |"Leonardo LTDA"|"leonardo@gmail.com"|"(62)99999-9999"|"Teste QA"|"SUCESSO"|  
         
