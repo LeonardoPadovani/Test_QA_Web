@@ -30,7 +30,7 @@ class ContatoPage
     end
 
     def Enviar
-        click_button 'Enviar'
+        click_button "Enviar"
     end
 
     def retornarMensagemSucesso
