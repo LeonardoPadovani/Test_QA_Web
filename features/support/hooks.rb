@@ -1,6 +1,6 @@
 Before do
     @contato = ContatoPage.new 
-    page.current_window.resize_to(1440,900)
+    page.current_window.resize_to(1240,900)
 end
 
 After do

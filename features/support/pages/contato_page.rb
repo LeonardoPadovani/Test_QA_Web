@@ -10,6 +10,9 @@ class ContatoPage
     end
 
     def digitarNome(nome)
+        #page.execute_script "window.scrollBy(0,500)"
+        elem = find("#input_comp-jt789atp")
+        page.execute_script('arguments[0].scrollIntoView();', elem)
         fill_in 'input_comp-jt789atp', with: nome
     end
 
@@ -30,7 +33,7 @@ class ContatoPage
     end
 
     def Enviar
-        click_button "Enviar"
+        click_button 'ENVIAR'
     end
 
     def retornarMensagemSucesso
