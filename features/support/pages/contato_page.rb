@@ -2,6 +2,7 @@ class ContatoPage
     include Capybara::DSL
 
     def expandirMenu
+        scroll_to(0, 5000)
         find("div[data-testid*=svgRoot-comp-]").click
     end
 
@@ -10,7 +11,8 @@ class ContatoPage
     end
 
     def digitarNome(nome)
-        page.execute_script "window.scrollBy(0,500)"
+        nome = find("'input_comp-jt789atp'")
+        scroll_to(nome, align: :bottom)
         fill_in 'input_comp-jt789atp', with: nome
     end
 
